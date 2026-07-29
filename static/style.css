@@ -25,3 +25,30 @@ button{
 #message.show{
     opacity:1;
 }
+
+#hearts {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.heart {
+    position: absolute;
+    bottom: -40px;
+    color: #ff4d6d;
+    font-size: 24px;
+    animation: floatUp linear forwards;
+}
+
+@keyframes floatUp {
+    from {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-110vh) translateX(40px) scale(1.5);
+        opacity: 0;
+    }
+}
