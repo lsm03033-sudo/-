@@ -30,9 +30,21 @@ btn.addEventListener("click", () => {
     // 1초 후 글자 등장
     setTimeout(()=>{
         message.classList.add("show");
+
+        document
+            .getElementById("nextBtn")
+            .classList.add("show");
+
     },1000);
 
 });
+
+document.getElementById("nextBtn").onclick = function () {
+
+     document.getElementById("foodList").style.display = "flex";
+
+};
+
 
 function createHeart() {
 

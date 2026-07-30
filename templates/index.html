@@ -20,6 +20,28 @@
 
     <button id="celebrateBtn">축하받기</button>
     <h2 id="message"> 이제 삼일 드가자~~~~~ </h2>
+
+    <button id="nextBtn" class="hidden-btn">
+    수민이가 먹고 시픈 거 🍽️ </button>
+
+    <div id="foodList">
+
+    <div class="food">
+        <img src="{{ url_for('static', filename='sushi.jpg') }}">
+        <p>🍣 또정초밥</p>
+    </div>
+
+    <div class="food">
+        <img src="{{ url_for('static', filename='pizza.jpg') }}">
+        <p>🍕 계동피자</p>
+    </div>
+
+    <div class="food">
+        <img src="{{ url_for('static', filename='galbi.jpg') }}">
+        <p>🍖 마숯갈</p>
+    </div>
+
+</div>
     
 
     <script src="{{ url_for('static', filename='script.js') }}"></script>
